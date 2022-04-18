@@ -12,6 +12,7 @@ trait Stats
      */
     private function runningInProduction()
     {
+        return false;
         if ($this->app->environment('local')) {
             return false;
         }
